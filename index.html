@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweetheart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<!-- SPLASH SCREEN -->
+<div id="splash" class="splash active">
+  <div class="splash-content">
+    <h1>🎉 Happy Birthday 🎉</h1>
+    <p>Tap untuk mulai 🎶</p>
+    <button onclick="startExperience()">Mulai</button>
+  </div>
+</div>
+
+<!-- CAKE SECTION -->
+<section id="cakeSection" class="section active" onclick="blowCandle()">
+  <canvas id="confetti"></canvas>
+
+  <div class="cake-wrapper">
+    <h1 class="main-title title-cake">Happy Birthday</h1>
+    <p class="main-title title-cake2">Fivya Valentina Fajarianti</p>
+
+    <div class="candle">
+      <div class="flame" id="flame"></div>
+      <div class="smoke hidden" id="smoke"></div>
+    </div>
+
+    <div class="cake">
+      <div class="icing"></div>
+      <div class="layer l1"></div>
+      <div class="layer l2"></div>
+      <div class="layer l3"></div>
+    </div>
+  </div>
+
+  <p class="hint">Tap layar buat tiup lilin!</p>
+  <button id="nextToMessage" class="next hidden" onclick="goToMessage(event)">
+    Next →
+  </button>
+</section>
+
+<!-- MESSAGE SECTION -->
+<section id="messageSection" class="section">
+  <h1 class="main-title">Happy Birthday Sweetheart 💖</h1>
+  <p class="message">
+    Cieeee, sekarang udah umur 21. Semoga hari ini kamu banyak senyum, banyak bahagia, dan capek karena kebanyakan disayang sama aku. Makasih banyak ya udah jadi orang yang selalu bikin hariku lebih ringan. Semoga semua yang kamu pengenin pelan pelan tercapai. <br>
+    Happy birthday <s>wibuuu</s> pacarkuuu wyatb.🤍
+  </p>
+  <button class="next" onclick="goToGallery()">Next →</button>
+</section>
+
+<!-- GALLERY SECTION -->
+<section id="gallerySection" class="section">
+  <h1 class="main-title title-moments">Our Moments</h1>
+  <div class="gallery">
+    <img src="img/img1.jpg">
+    <img src="img/img2.jpg">
+    <img src="img/img3.jpg">
+    <img src="img/img4.jpg">
+    <img src="img/img5.jpg">
+    <img src="img/img6.jpg">
+    <img src="img/img7.jpg">
+    <img src="img/img8.jpg">
+    <img src="img/img9.jpg">
+    <img src="img/img10.jpg">
+    <img src="img/img11.jpg">
+    <img src="img/img12.jpg">
+  </div>
+</section>
+
+<audio id="bgm" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
